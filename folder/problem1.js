@@ -39,7 +39,7 @@ function createAnddeleteFile(nameOfFile){
             console.log("file has been deleted");
           }
 
-        }, 2000);
+        });
     }
   })
 }
