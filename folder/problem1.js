@@ -31,7 +31,6 @@ function createAnddeleteFile(nameOfFile){
     }
     else{
       console.log("file has been created");
-      setTimeout(function(){
         fs.unlink(`${nameOfFile}`, function(err){
           if(err){
             console.log(err);
@@ -41,7 +40,6 @@ function createAnddeleteFile(nameOfFile){
           }
 
         }, 2000);
-      })
     }
   })
 }
